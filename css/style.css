@@ -1,0 +1,239 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Geral */
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+
+/* Customizar Scroll-Bar */
+
+::-webkit-scrollbar {
+  background-color: #9c9c9c;
+  height: 2px;
+  border-radius: 5px;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #bebebe;
+  height: 2px;
+  scroll-behavior: smooth;
+}
+
+/* Corpo da Página */
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #3F3F47;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-image: url(../img/Wallpaper.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 90%;
+  height: 90vh;
+  border-radius: 3rem;
+}
+
+/* Cores e Efeitos */
+
+:root {
+  --sombraLeve: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+}
+
+/* Navbar */
+
+header {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem;
+  font-size: 1.2rem;
+  gap: 1.6rem;
+
+
+
+  .linksNavbar {
+    display: flex;
+    gap: 2.8rem;
+    align-items: center;
+
+  }
+
+  .githubNavbar {
+    font-size: 2rem;
+  }
+
+  .tituloNavbar {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+    transition: 1s;
+    font-weight: 500;
+  }
+
+  .linkSelecionado {
+    padding: 1.2rem;
+    background-color: #F50043;
+    border-radius: 0rem 0rem 1.6rem 1.6rem;
+    color: white;
+    box-shadow: var(--sombraLeve);
+  }
+
+  .inputNavbar {
+    background-color: white;
+    width: 15%;
+    display: flex;
+    gap: 1rem;
+    padding: .6rem;
+    align-items: center;
+    font-size: 1.6rem;
+    border-radius: 1.6rem;
+
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+      padding: 0rem 1rem;
+
+    }
+
+    .searchIconNavbar {
+      background-color: #3F3F47;
+      padding: .6rem;
+      color: white;
+      border-radius: 1rem;
+      box-shadow: var(--sombraLeve);
+    }
+  }
+}
+
+/* Seção Conteúdo */
+
+section {
+  height: 70vh;
+  padding: 2.6rem;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  /* Cards */
+
+  .cardsConteudo {
+    width: 100%;
+    height: 60vh;
+    gap: 2.6rem;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll hidden;
+    padding: 4.6rem;
+  }
+
+  .card {
+    width: 30rem;
+    position: relative;
+    border-radius: 2rem;
+    transition: 1s;
+  }
+
+
+  .imgCard {
+    width: 30rem;
+    height: 90%;
+    object-fit: cover;
+    filter: brightness(70%);
+    border-radius: 2rem;
+  }
+
+  .infoCards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+
+  h2,
+  a {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #3F3F47;
+    text-decoration: none;
+  }
+
+
+  .codigo {
+    padding: 1rem;
+    border: solid 1px;
+    transition: 1s;
+  }
+
+  .codigo:hover {
+    background-color: #F50043;
+    border: transparent 1px solid;
+    color: white;
+    box-shadow: var(--sombraLeve);
+  }
+
+}
+
+/* Rodapé */
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4.6rem;
+
+  .social {
+    font-size: 1.6rem;
+    display: flex;
+    gap: 2.6rem;
+    cursor: pointer;
+    color: black;
+  }
+
+  .botoesRodape {
+    display: flex;
+    align-items: center;
+    gap: 2.6rem;
+    font-size: 1.6rem;
+
+    i {
+      padding: 1rem;
+      color: white;
+      background-color: #0B55F4;
+      border-radius: 1.6rem;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.overview {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 2.6rem;
+
+  h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 3rem;
+  }
+
+  img {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+  }
+
+  h2,h3,a,p{
+    font-size: 2.6rem;
+    text-align: center;
+  }
+
+  h3{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  p{
+    font-size: 1.6rem;
+  }
+
+  a{
+    font-size: 1.6rem;
+    text-align: center;
+    display: block;
+    margin: 1rem;
+  }
+
+  span{
+    font-weight: 600;
+  }
+}
